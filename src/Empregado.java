@@ -12,6 +12,11 @@ public class Empregado{
         public String getNome() {
             return nome;
         }
+
+        @Override
+        public String toString() {
+            return "Empregado [nome = " + nome + "]"; //refatorar para quando for mandar para a api
+        }
         
     
 
