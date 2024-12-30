@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
 
-//Realizar uma documentação clara para cada função
 public class ListaEmpregados {
     private List<Empregado> empregadosList;
 
@@ -25,16 +24,14 @@ public class ListaEmpregados {
         }
     }
 
-    //Metodo para listar os funcionarios 
+    //Metodo para listar/exibir os funcionarios 
+    public void exibirEmpregados(){
+        System.out.println(empregadosList);
+    }
     
 
     //Metodo para mostrar quantos funcionarios estão cadastrados
-
-
-    public static void main(String[] args) {
-        ListaEmpregados listaEmpregados = new ListaEmpregados();
-        listaEmpregados.adicionarEmpregado("Bruno");
+    public int numeroDeEmpregados(){
+        return empregadosList.size();
     }
-
-    
 }
