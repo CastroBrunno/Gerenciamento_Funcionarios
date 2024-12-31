@@ -11,7 +11,7 @@ public class ListaEmpregados {
     //metodo para adicionar empregados
     // Melhorar o metodo adicionando indice de usuario como se fosse um id para melhorar a procura do funcionario, provavelmente ultilizando o map
     public void adicionarEmpregado(String nome){
-        empregadosList.add(new Empregado(nome));
+        empregadosList.add(new Empregado(nome, getNextID())); // o id dentro dos parenteses vai receber o valor de uma fução getNextID, que será criada
     }
 
     //metodo para remover Empregados
@@ -33,5 +33,12 @@ public class ListaEmpregados {
     //Metodo para mostrar quantos funcionarios estão cadastrados
     public int numeroDeEmpregados(){
         return empregadosList.size();
+    }
+
+
+    private int currentId = 0;
+    public int getNextID(){
+        currentId++;
+        return currentId;
     }
 }

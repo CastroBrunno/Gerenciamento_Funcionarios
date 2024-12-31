@@ -2,10 +2,12 @@ public class Empregado{
     
         //atributos
         private String nome;
+        private int id;
 
         //metodo construtor
-        public Empregado(String nome) {
+        public Empregado(String nome, int id) {
             this.nome = nome;
+            this.id = id;
         }
 
         //metodo get
@@ -13,9 +15,13 @@ public class Empregado{
             return nome;
         }
 
+        public int getId() {
+            return id;
+        }
+
         @Override
         public String toString() {
-            return "Empregado [nome = " + nome + "]"; //refatorar para quando for mandar para a api
+            return "Empregado [id: " + id + ", nome = " + nome + "]"; //refatorar para quando for mandar para a api
         }
         
     
