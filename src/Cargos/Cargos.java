@@ -4,6 +4,7 @@ public class Cargos {
     //atributos
     private String[] cargosCadastrados;
 
+    //metodo construtor
     public Cargos() {
         this.cargosCadastrados = new String[]{
             "Desenvolvedor Front-End Jr",
@@ -17,6 +18,7 @@ public class Cargos {
         this.cargosCadastrados = cargos;
     }
 
+    //metodos get
     public String[] getCargosCadastrados() {
         return cargosCadastrados;
     }

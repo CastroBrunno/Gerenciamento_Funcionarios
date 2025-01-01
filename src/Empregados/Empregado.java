@@ -32,6 +32,7 @@ public class Empregado{
             return cargo;
         }
 
+        //metodos toString
         @Override
         public String toString() {
             return "Empregado [id: " + id + ", nome = " + nome + ", cargo: " + cargo + ", Salario: " + String.format("%.3f", salario) + "]"; //refatorar para quando for mandar para a api

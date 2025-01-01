@@ -1,5 +1,13 @@
 package Cargos;
 
+/**
+     * <h1>Cargo Validador</h1>
+     * Verifica se o cargo informado existe na lista de cargos.
+     * 
+     * @param cargo Cargo que sera verificado
+     * @return Retorna true se o cargo existir, e false se o cargo não existir
+     */
+
 public class CargoValidador {
     Cargos cargos = new Cargos();
     boolean cargoValido = false;
