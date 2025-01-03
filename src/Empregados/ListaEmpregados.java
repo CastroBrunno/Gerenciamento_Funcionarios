@@ -56,11 +56,7 @@ public class ListaEmpregados {
      * 
      */
     public void removerEmpregado(String nome){
-        for (Empregado e : empregadosList) {
-            if (e.getNome().equalsIgnoreCase(nome)) {
-                empregadosList.remove(e);
-            }
-        }
+        empregadosList.removeIf(e -> e.getNome().equalsIgnoreCase(nome));
     }
 
     /**
