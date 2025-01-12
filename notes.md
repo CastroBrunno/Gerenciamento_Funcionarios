@@ -35,3 +35,12 @@ def definir_salario(cargo):
 
 - Integrar a função `definir_salario` no ponto onde o cargo é selecionado pelo usuário.
 - Atualizar a interface do usuário para refletir automaticamente o salário definido.
+
+
+
+Linha 59 ListaEmpregados
+for (Empregado e : empregadosList) {
+            if (e.getNome().equalsIgnoreCase(nome)) {
+                empregadosList.remove(e);
+            }
+        }
